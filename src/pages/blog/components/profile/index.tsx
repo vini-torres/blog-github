@@ -1,7 +1,7 @@
 import { ArrowSquareOut, Buildings, GitBranch, Users } from 'phosphor-react'
-import { NavLink } from 'react-router-dom'
 
 import { Item } from '../../../../components/item'
+import { Link } from '../../../../components/Link'
 
 export function Profile() {
   return (
@@ -15,10 +15,7 @@ export function Profile() {
         <div className="flex flex-1 flex-col gap-2">
           <div className="flex flex-col gap-2 small:flex-row sm:justify-between sm:gap-0">
             <h2 className="text-base-title sm:text-xl">Cameron Williamson</h2>
-            <NavLink to="" className="flex items-center gap-1">
-              <span className="text-xs font-bold text-blue">Github</span>
-              <ArrowSquareOut className="text-blue" />
-            </NavLink>
+            <Link label="Github" Icon={ArrowSquareOut} to="" />
           </div>
           <p className="hidden text-xs text-base-text small:flex xsm:text-sm">
             Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
