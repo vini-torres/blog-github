@@ -11,24 +11,24 @@ export function Profile() {
         alt=""
         className="h-[6.25rem] w-[6.25rem] rounded sm:h-[9.25rem] sm:w-[9.25rem]"
       />
-      <div className="flex w-full flex-col">
+      <div className="md:gap-0 flex w-full flex-col gap-3">
         <div className="flex flex-1 flex-col gap-2">
-          <div className="flex justify-between">
-            <h2 className="text-xl text-base-title">Cameron Williamson</h2>
+          <div className="flex flex-col gap-2 small:flex-row sm:justify-between sm:gap-0">
+            <h2 className="text-base-title sm:text-xl">Cameron Williamson</h2>
             <NavLink to="" className="flex items-center gap-1">
               <span className="text-xs font-bold text-blue">Github</span>
               <ArrowSquareOut className="text-blue" />
             </NavLink>
           </div>
-          <p className="text-sm text-base-text">
+          <p className="hidden text-xs text-base-text small:flex xsm:text-sm">
             Tristique volutpat pulvinar vel massa, pellentesque egestas. Eu
             viverra massa quam dignissim aenean malesuada suscipit. Nunc,
             volutpat pulvinar vel mass.
           </p>
         </div>
-        <ul className="flex items-center gap-6">
+        <ul className="flex flex-wrap items-center gap-3 xsm:flex-nowrap sm:gap-6">
           <Item Icon={GitBranch} title="diego3g" />
-          <Item Icon={Buildings} title="Sem organização" />
+          <Item Icon={Buildings} title="Não vinculado" />
           <Item Icon={Users} title="32K Seguidores" />
         </ul>
       </div>

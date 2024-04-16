@@ -7,9 +7,11 @@ interface ItemProps {
 }
 export function Item({ Icon, title }: ItemProps) {
   return (
-    <li className="flex items-center gap-1 text-sm text-base-subtitle">
+    <li className="flex items-center gap-1">
       <Icon className="text-base-label" size={18} />
-      {title}
+      <span className="hidden text-xs text-base-subtitle small:flex sm:text-sm">
+        {title}
+      </span>
     </li>
   )
 }
