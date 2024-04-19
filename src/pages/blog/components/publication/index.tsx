@@ -26,7 +26,9 @@ export function Publication({ post }: PostType) {
       className="w-fit space-y-5 rounded bg-base-post p-8"
     >
       <div className="flex justify-between gap-1">
-        <h3 className="font-bold text-base-title">{post.title}</h3>
+        <h3 className="text-sm font-bold text-base-title sm:text-base">
+          {post.title}
+        </h3>
         <span className="whitespace-nowrap text-sm capitalize text-base-label">
           {dateFromNow}
         </span>
